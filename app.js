@@ -22,32 +22,62 @@ let products = [
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Mac Pro',
         image: '2.jpg',
         price: 120000
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Support Ordinateur',
         image: '3.PNG',
         price: 220000
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
-        image: '4.PNG',
+        name: 'Souris de bureau',
+        image: '4.webp',
         price: 123000
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
-        image: '5.PNG',
+        name: 'Clavier de bureau',
+        image: '5.webp',
         price: 320000
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Imprimante',
         image: '6.PNG',
+        price: 120000
+    },
+    {
+        id: 7,
+        name: 'Cartouche Imprimante',
+        image: '7.PNG',
+        price: 120000
+    },
+    {
+        id: 8,
+        name: 'Pack Office',
+        image: '8.PNG',
+        price: 120000
+    },
+    {
+        id: 9,
+        name: 'Licence Adobe',
+        image: '9.png',
+        price: 120000
+    },
+    {
+        id: 10,
+        name: 'Licence Linkedin',
+        image: '10.webp',
+        price: 120000
+    },
+    {
+        id: 11,
+        name: 'Licence JetBrains',
+        image: '11.png',
         price: 120000
     }
 ];
@@ -60,7 +90,7 @@ function initApp(){
             <img src="equipments/${value.image}">
             <div class="title">${value.name}</div>
 <!--            <div class="price">${value.price.toLocaleString()}</div>-->
-            <button onclick="addToCard(${key})">Add To Card</button>`;
+            <button onclick="addToCard(${key})">Ajouter au Panier</button>`;
         list.appendChild(newDiv);
     })
 }
