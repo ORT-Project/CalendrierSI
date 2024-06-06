@@ -50,6 +50,7 @@ header .shopping span{
     width: 90%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 .list .item .title{
     font-weight: 600;
