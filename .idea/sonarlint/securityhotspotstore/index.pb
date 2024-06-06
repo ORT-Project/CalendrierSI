@@ -30,3 +30,12 @@ L
 .idea/dictionaries/micka.xml,d\6\d625974537eb994e3183a793fed02726731d2282
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+;
+panier.html,f\a\fad9e7616458e60ce760777f967d3b775c36db14
+6
+app.js,4\a\4a68969ef8e858229267b842dedf42ab5dde4d50
+:
+
+panier.css,8\c\8c78246733d0459beb7a4a80e3d82bd1cd84a26c
+G
+equipments/shopping.svg,9\c\9c2b8f07a71634bcfed1dbd8cb9385c19a9b3618
