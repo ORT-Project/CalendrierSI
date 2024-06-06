@@ -184,3 +184,41 @@ li:hover::before {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
+#equipmentSelect {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+#equipmentSelect:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#equipmentSelect option {
+    padding: 10px;
+}
+
+#logicielSelect {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+#logicielSelect:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#logicielSelect option {
+    padding: 10px;
+}
