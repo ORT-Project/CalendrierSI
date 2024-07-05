@@ -52,25 +52,7 @@
                 </div>
             </div>
             <span></span>
-            <h1>Logiciels</h1>
-            <select id="logicielSelect">
-                <option value="Jetbrain">Jetbrain</option>
-                <option value="Outils de Test">Outils de Test</option>
-                <option value="Google Cloud">Google Cloud</option>
-                <option value="Pack Office">Pack Office</option>
-                <option value="Adobe">Adobe</option>
-                <option value="CRM">CRM</option>
-                <option value="Outils analyse de données/site web">Outils analyse de données/site web</option>
-                <option value="Réseaux sociaux">Réseaux sociaux</option>
-                <option value="Gestion de projets">Gestion de projets</option>
-                <option value="Conception graphique">Conception graphique</option>
-                <option value="SIRH">SIRH</option>
-                <option value="ATS">ATS</option>
-                <option value="Logiciels de gestion de la paie">Logiciels de gestion de la paie</option>
-                <option value="Outils de gestion du temps et des présences">Outils de gestion du temps et des présences</option>
-                <option value="Logiciel de comptabilité">Logiciel de comptabilité</option>
-            </select>
-            <p id="logicielDescription"></p>
+
             <span></span>
         </div>
         </div>
@@ -125,21 +107,7 @@
         }
     });
 </script>
-<script>
-    document.getElementById('logicielSelect').addEventListener('change', function(e) {
-        var descriptionElement = document.getElementById('logicielDescription');
-        switch(e.target.value) {
-            case 'Jetbrain':
-                descriptionElement.textContent = 'Jetbrain est un éditeur de logiciel qui propose des outils de développement pour les développeurs.' *
-                    'Si vous avez besoin d\'un logiciel Jetbrain, votre manager doit faire la demande via le ' +
-                    '<a href="../panier.html">panier</a>.';
-                break;
-            default:
-                descriptionElement.textContent = '';
-        }
-    });
 
-</script>
 
 <style>
     .logi-row {
