@@ -39,3 +39,8 @@ S
 panier.css,8\c\8c78246733d0459beb7a4a80e3d82bd1cd84a26c
 G
 equipments/shopping.svg,9\c\9c2b8f07a71634bcfed1dbd8cb9385c19a9b3618
+;
+offres.html,8\e\8e37890ecfbe726bf253e85ec8095e858bdd04f8
+:
+
+offres.css,0\8\08c8bc861fb4b9f66611fffd2400af5ac54d0d36
