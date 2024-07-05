@@ -222,3 +222,8 @@ li:hover::before {
 #logicielSelect option {
     padding: 10px;
 }
+
+#description a {
+    color: #007bff; /* Couleur bleue par défaut pour les liens Bootstrap, par exemple */
+    text-decoration: underline; /* Pour souligner le lien */
+}

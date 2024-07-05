@@ -54,20 +54,7 @@
             <span></span>
             <h1>Logiciels</h1>
             <select id="logicielSelect">
-                <option value="Webstorm">Webstorm</option>
-                <option value="Git">Git</option>
-                <option value="Docker">Docker</option>
-                <option value="PHP">PHP</option>
-                <option value="Java">Java</option>
-                <option value="MySQL">MySQL</option>
-                <option value="CSS">CSS</option>
-                <option value="HTML">HTML</option>
-                <option value="Javascript">Javascript</option>
-                <option value="React">React</option>
-                <option value="Symfony">Symfony</option>
-                <option value="MariaDB">MariaDB</option>
-                <option value="VsCode">VsCode</option>
-                <option value="Microsoft Teams">Microsoft Teams</option>
+                <option value="Jetbrain">Jetbrain</option>
                 <option value="Outils de Test">Outils de Test</option>
                 <option value="Google Cloud">Google Cloud</option>
                 <option value="Pack Office">Pack Office</option>
@@ -83,6 +70,7 @@
                 <option value="Outils de gestion du temps et des présences">Outils de gestion du temps et des présences</option>
                 <option value="Logiciel de comptabilité">Logiciel de comptabilité</option>
             </select>
+            <p id="logicielDescription"></p>
             <span></span>
         </div>
         </div>
@@ -93,30 +81,66 @@
         var descriptionElement = document.getElementById('description');
         switch(e.target.value) {
             case 'ordinateurs-portables':
-                descriptionElement.textContent = 'Nos Ordianteurs portables sont fournit pour les employés qui sont en télétravail, elle permet de travailler de n\'importe où.' +
+                descriptionElement.innerHTML= 'Nos Ordianteurs portables sont fournit pour les employés qui sont en télétravail, elle permet de travailler de n\'importe où.' +
                     ' Les ordinateurs portables peuvent être demandé depuis l\'onglet panier.' +
-                    ' Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter l\'ordinateur portable à votre panier.';
+                    ' Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter l\'ordinateur portable à votre panier.'+
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             case 'ecrans-ordinateurs':
-                descriptionElement.textContent = 'Description pour Écrans d\'ordinateurs';
+                descriptionElement.innerHTML = 'Les écrans d\'ordinateurs sont fournit pour les employés qui ont besoin d\'un écran supplémentaire pour travailler.' +
+                    ' Les écrans d\'ordinateurs peuvent être demandé depuis l\'onglet panier.' +
+                    ' Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter l\'écran d\'ordinateur à votre panier. ' +
+                    'Notre equipe vous contactera pour déterminer les raisons pour lesquelles vous avez besoin d\'un écran d\'ordinateur supplémentaire.' +
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             case 'ordinateur-bureau':
-                descriptionElement.textContent = 'Description pour Ordinateur de bureau';
+                descriptionElement.innerHTML = 'Tous les employés de l\'entreprise ont un ordinateur de bureau, il est fournit par l\'entreprise. ' +
+                    'Si vous avez besoin d\'un ordinateur de bureau supplémentaire, vous pouvez faire la demande depuis l\'onglet panier. ' +
+                    'Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter l\'ordinateur de bureau à votre panier.' +
+                    'L\'ordinateur de bureau est fournit avec un écran, un clavier et une souris.' +
+                    'Notre equipe vous contactera pour déterminer les raisons pour lesquelles vous avez besoin d\'un ordinateur de bureau supplémentaire.'  +
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             case 'telephone-portable':
-                descriptionElement.textContent = 'Description pour Téléphone portable';
+                descriptionElement.innerHTML = 'Tous les employés de l\'entreprise ont un téléphone portable, il est fournit par l\'entreprise. ' +
+                    'Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter le téléphone portable à votre panier.' +
+                    'Notre equipe vous contactera pour déterminer les raisons pour lesquelles vous avez besoin d\'un téléphone portable supplémentaire.' +
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             case 'imprimante':
-                descriptionElement.textContent = 'Description pour Imprimante';
+                descriptionElement.innerHTML = 'Une imprimente peut être le responsable de votre seervice ou votre manager. ' +
+                    'Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter l\'imprimante à votre panier.' +
+                    'Notre equipe vous contactera pour déterminer les raisons pour lesquelles vous avez besoin d\'une imprimante.' +
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             case 'telephone-bureau':
-                descriptionElement.textContent = 'Description pour Téléphone de bureau';
+                descriptionElement.innerHTML= 'Tous les employés de l\'entreprise ont un téléphone de bureau, il est fournit par l\'entreprise. ' +
+                    'Les télephones doivent être utilisé seulement pour les besoins de l\'entreprise. ' +
+                    'Pour faire la demande vous devez d\'abord vous connecter, ensuite vous pouvez ajouter le téléphone de bureau à votre panier.' +
+                    'Notre equipe vous contactera pour déterminer les raisons pour lesquelles vous avez besoin d\'un téléphone de bureau supplémentaire.' +
+                    '<a href="../panier.html">Accédez au panier</a>.';
                 break;
             default:
                 descriptionElement.textContent = '';
         }
     });
 </script>
+<script>
+    document.getElementById('logicielSelect').addEventListener('change', function(e) {
+        var descriptionElement = document.getElementById('logicielDescription');
+        switch(e.target.value) {
+            case 'Jetbrain':
+                descriptionElement.textContent = 'Jetbrain est un éditeur de logiciel qui propose des outils de développement pour les développeurs.' *
+                    'Si vous avez besoin d\'un logiciel Jetbrain, votre manager doit faire la demande via le ' +
+                    '<a href="../panier.html">panier</a>.';
+                break;
+            default:
+                descriptionElement.textContent = '';
+        }
+    });
+
+</script>
+
 <style>
     .logi-row {
         display: flex;
